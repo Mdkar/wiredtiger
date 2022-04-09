@@ -1,0 +1,2 @@
+/home/mayhemuser/Downloads/hackathon/wiredtiger/test/fuzz/CMakeFiles/rebuild_cache.dir
+/home/mayhemuser/Downloads/hackathon/wiredtiger/test/fuzz/CMakeFiles/edit_cache.dir

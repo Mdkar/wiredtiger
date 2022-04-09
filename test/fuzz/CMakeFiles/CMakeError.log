@@ -1,0 +1,21 @@
+Performing C SOURCE FILE Test HAVE_LIBCLANG_FUZZER failed with the following output:
+Change Dir: /home/mayhemuser/Downloads/hackathon/wiredtiger/test/fuzz/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f8e92/fast && /usr/bin/make -f CMakeFiles/cmTC_f8e92.dir/build.make CMakeFiles/cmTC_f8e92.dir/build
+make[1]: Entering directory '/home/mayhemuser/Downloads/hackathon/wiredtiger/test/fuzz/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f8e92.dir/src.c.o
+/usr/bin/cc   -DHAVE_LIBCLANG_FUZZER -fsanitize=fuzzer-no-link   -o CMakeFiles/cmTC_f8e92.dir/src.c.o   -c /home/mayhemuser/Downloads/hackathon/wiredtiger/test/fuzz/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized argument to ‘-fsanitize=’ option: ‘fuzzer-no-link’
+make[1]: *** [CMakeFiles/cmTC_f8e92.dir/build.make:66: CMakeFiles/cmTC_f8e92.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/mayhemuser/Downloads/hackathon/wiredtiger/test/fuzz/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_f8e92/fast] Error 2
+
+
+Source file was:
+
+    #include <inttypes.h>
+    #include <stddef.h>
+    int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
+        return 0;
+    }
+

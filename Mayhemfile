@@ -5,12 +5,12 @@ project: wiredtiger
 target: wt
 
 # Base image to run the binary in.
-image: ghcr.io/mdkar/fuzzwt:latest
+image: ghcr.io/mdkar/wiredtiger:latest
 
 # List of commands used to test the target
 cmds:
 
   # Command used to start the target, "@@" is the input file
   # (when "@@" is omitted Mayhem defaults to stdin inputs)
-  - cmd: /wt 
+  - cmd: /wt @@
 
